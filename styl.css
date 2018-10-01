@@ -1,5 +1,5 @@
 html {
-    background: url(http://unsplash.it/1500/1000?image=881&blur=50);
+    background: blue url(http://unsplash.it/1500/1000?image=881&blur=50);
     background-size: cover;
     font-family: 'helvetica neue';
     text-align: center;
@@ -35,9 +35,23 @@ body {
 }
 
 .hand {
-    width: 50%;
-    height: 7px;
+    width: 40%;
+    height: 8px;
     background: black;
     position: absolute;
     top: 15rem;
+    left: 10%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: 0.05s;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    background: black;
+    position: relative;
+    border-radius: 50%;
+    top: 49.3%;
+    left: 48.3%;
 }
