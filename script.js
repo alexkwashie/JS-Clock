@@ -16,14 +16,18 @@ function setDate() {
     const seconds = now.getSeconds();
     const secondsDeg = ((seconds / 60) * 360) + 90; //Add 90 to offset it
     secondHand.style.transform = `rotate(${secondsDeg}deg)`;
+    secondHand.style.background = `yellow`;
+    secondHand.style.height = `4px`;
 
     const minutes = now.getMinutes();
     const minutesDeg = ((minutes / 60) * 360) + 90;
     minhand.style.transform = `rotate(${minutesDeg}deg)`;
 
     const hours = now.getHours();
-    const hoursDeg = ((hours / 12) * 360) + 90;
+    const hoursDeg = ((hours / 12) * 360) + 90; //becos it goes roung 12 times
     hourhand.style.transform = `rotate(${hoursDeg}deg)`;
+    hourhand.style.background = `red`;
 
 }
+
 setInterval(setDate, 1000);
