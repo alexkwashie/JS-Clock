@@ -24,7 +24,7 @@ function setDate() {
     minhand.style.transform = `rotate(${minutesDeg}deg)`;
 
     const hours = now.getHours();
-    const hoursDeg = ((hours / 12) * 360) + 90; //becos it goes roung 12 times
+    const hoursDeg = ((hours / 12) * 360) + 90; //becos it goes round 12 times
     hourhand.style.transform = `rotate(${hoursDeg}deg)`;
     hourhand.style.background = `red`;
 
