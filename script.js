@@ -14,7 +14,7 @@ const hourhand = document.querySelector('.hour-hand');
 function setDate() {
     let now = new Date();
     const seconds = now.getSeconds();
-    const secondsDeg = ((seconds / 60) * 360) + 90; //Add 90 to offset it
+    const secondsDeg = ((seconds / 60) * 360) + 90; //Add 90 to offset it (from the 90deg in the Css)
     secondHand.style.transform = `rotate(${secondsDeg}deg)`;
     secondHand.style.background = `yellow`;
     secondHand.style.height = `4px`;
